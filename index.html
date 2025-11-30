@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GYM Tools Rental</title>
+  <link rel="stylesheet" href="/css/GMY_MATERIALS.css" />
+</head>
+<body>
+  <header class="landing">
+    <img src="/images/hello.jpg" alt="Hello" class="hello-image" />
+    <h1>Welcome to GYM Tools Rental</h1>
+    <p>Rent the equipment you need — fast and simple.</p>
+  </header>
+
+  <main class="container">
+    <section id="tools-section">
+      <h2>Available Tools</h2>
+      <div id="tools-list" class="tools-grid">Loading tools...</div>
+    </section>
+
+    <section id="rent-section" class="rent-form">
+      <h3>Rent a tool</h3>
+      <form id="rentForm">
+        <label>Tool:
+          <select id="toolSelect"></select>
+        </label>
+        <label>Your name: <input id="renterName" required /></label>
+        <label>Contact: <input id="renterContact" /></label>
+        <label>Start date: <input id="startDate" type="date" required /></label>
+        <label>End date: <input id="endDate" type="date" /></label>
+        <button type="submit">Rent</button>
+      </form>
+      <div id="rentMessage" class="message"></div>
+    </section>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
